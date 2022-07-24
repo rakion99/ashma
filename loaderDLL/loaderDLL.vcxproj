@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{1a983cc1-6d73-4cb6-b576-eb4a5ac1e901}</ProjectGuid>
+    <RootNamespace>loaderDLL</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\..\..\..\OneDrive\Desktop\omithus_2\Omithus\bin\Debug</OutDir>
+    <TargetName>Load</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>Default</LanguageStandard_C>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Ashma\api\addresses.hpp" />
+    <ClInclude Include="Ashma\api\api.hpp" />
+    <ClInclude Include="Ashma\Client\client.hpp" />
+    <ClInclude Include="Ashma\Client\main.hpp" />
+    <ClInclude Include="Ashma\execution\bytecode_serializer\serializer.hpp" />
+    <ClInclude Include="Ashma\execution\execution.hpp" />
+    <ClInclude Include="Ashma\execution\trans_instr\transpiler.hpp" />
+    <ClInclude Include="Ashma\execution\utils\lua\lapi.h" />
+    <ClInclude Include="Ashma\execution\utils\lua\lauxlib.h" />
+    <ClInclude Include="Ashma\execution\utils\lua\lcode.h" />
+    <ClInclude Include="Ashma\execution\utils\lua\ldebug.h" />
+    <ClInclude Include="Ashma\execution\utils\lua\ldo.h" />
+    <ClInclude Include="Ashma\execution\utils\lua\lfunc.h" />
+    <ClInclude Include="Ashma\execution\utils\lua\lgc.h" />
+    <ClInclude Include="Ashma\execution\utils\lua\llex.h" />
+    <ClInclude Include="Ashma\execution\utils\lua\llimits.h" />
+    <ClInclude Include="Ashma\execution\utils\lua\lmem.h" />
+    <ClInclude Include="Ashma\execution\utils\lua\lobject.h" />
+    <ClInclude Include="Ashma\execution\utils\lua\lopcodes.h" />
+    <ClInclude Include="Ashma\execution\utils\lua\lparser.h" />
+    <ClInclude Include="Ashma\execution\utils\lua\lstate.h" />
+    <ClInclude Include="Ashma\execution\utils\lua\lstring.h" />
+    <ClInclude Include="Ashma\execution\utils\lua\ltable.h" />
+    <ClInclude Include="Ashma\execution\utils\lua\ltm.h" />
+    <ClInclude Include="Ashma\execution\utils\lua\lua.h" />
+    <ClInclude Include="Ashma\execution\utils\lua\luaconf.h" />
+    <ClInclude Include="Ashma\execution\utils\lua\lualib.h" />
+    <ClInclude Include="Ashma\execution\utils\lua\lundump.h" />
+    <ClInclude Include="Ashma\execution\utils\lua\lvm.h" />
+    <ClInclude Include="Ashma\execution\utils\lua\lzio.h" />
+    <ClInclude Include="Ashma\execution\utils\Memory\Hook\CMemory.hpp" />
+    <ClInclude Include="Ashma\execution\utils\Memory\Memory.hpp" />
+    <ClInclude Include="Ashma\Server\main.hpp" />
+    <ClInclude Include="Ashma\Server\server.hpp" />
+    <ClInclude Include="Ashma\SigScanner\mem.h" />
+    <ClInclude Include="Ashma\Win32\Bypasses\callcheck.hpp" />
+    <ClInclude Include="Ashma\Win32\Bypasses\console.hpp" />
+    <ClInclude Include="Ashma\Win32\Bypasses\MinHook.h" />
+    <ClInclude Include="Ashma\Win32\Bypasses\retcheck.hpp" />
+    <ClInclude Include="Ashma\Win32\Rblx\DataModel.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Ashma\Client\client.cpp" />
+    <ClCompile Include="Ashma\Client\main.cpp" />
+    <ClCompile Include="Ashma\execution\utils\lua\lapi.c" />
+    <ClCompile Include="Ashma\execution\utils\lua\lauxlib.c" />
+    <ClCompile Include="Ashma\execution\utils\lua\lbaselib.c" />
+    <ClCompile Include="Ashma\execution\utils\lua\lcode.c" />
+    <ClCompile Include="Ashma\execution\utils\lua\ldblib.c" />
+    <ClCompile Include="Ashma\execution\utils\lua\ldebug.c" />
+    <ClCompile Include="Ashma\execution\utils\lua\ldo.c" />
+    <ClCompile Include="Ashma\execution\utils\lua\ldump.c" />
+    <ClCompile Include="Ashma\execution\utils\lua\lfunc.c" />
+    <ClCompile Include="Ashma\execution\utils\lua\lgc.c" />
+    <ClCompile Include="Ashma\execution\utils\lua\linit.c" />
+    <ClCompile Include="Ashma\execution\utils\lua\liolib.c" />
+    <ClCompile Include="Ashma\execution\utils\lua\llex.c" />
+    <ClCompile Include="Ashma\execution\utils\lua\lmathlib.c" />
+    <ClCompile Include="Ashma\execution\utils\lua\lmem.c" />
+    <ClCompile Include="Ashma\execution\utils\lua\loadlib.c" />
+    <ClCompile Include="Ashma\execution\utils\lua\lobject.c" />
+    <ClCompile Include="Ashma\execution\utils\lua\lopcodes.c" />
+    <ClCompile Include="Ashma\execution\utils\lua\loslib.c" />
+    <ClCompile Include="Ashma\execution\utils\lua\lparser.c" />
+    <ClCompile Include="Ashma\execution\utils\lua\lstate.c" />
+    <ClCompile Include="Ashma\execution\utils\lua\lstring.c" />
+    <ClCompile Include="Ashma\execution\utils\lua\lstrlib.c" />
+    <ClCompile Include="Ashma\execution\utils\lua\ltable.c" />
+    <ClCompile Include="Ashma\execution\utils\lua\ltablib.c" />
+    <ClCompile Include="Ashma\execution\utils\lua\ltm.c" />
+    <ClCompile Include="Ashma\execution\utils\lua\lua.c" />
+    <ClCompile Include="Ashma\execution\utils\lua\luac.c" />
+    <ClCompile Include="Ashma\execution\utils\lua\lundump.c" />
+    <ClCompile Include="Ashma\execution\utils\lua\lvm.c" />
+    <ClCompile Include="Ashma\execution\utils\lua\lzio.c" />
+    <ClCompile Include="Ashma\execution\utils\lua\print.c" />
+    <ClCompile Include="Ashma\execution\utils\Memory\Hook\CMemory.cpp" />
+    <ClCompile Include="Ashma\execution\utils\Memory\Memory.cpp" />
+    <ClCompile Include="Ashma\Injector\Inject.cpp" />
+    <ClCompile Include="Ashma\Server\main.cpp" />
+    <ClCompile Include="Ashma\Server\server.cpp" />
+    <ClCompile Include="Ashma\Win32\dllmain.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\..\..\..\OneDrive\Desktop\MinHook_133_lib\libMinHook-x86-v141-mtd.lib" />
+    <Library Include="Ashma\Win32\Bypasses\libMinHook-x86-v110-mt.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
